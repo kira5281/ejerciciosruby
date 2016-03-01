@@ -1,0 +1,15 @@
+<h1>Apartamento</h1>
+
+<%= form_for @apartamento do |f| %>
+  <p>
+    <%= f.label "Nombre:" %>
+    <%= f.text_field :nombre %><br>
+  	<%= f.select :torre_id, Torre.all.collect{|u| [u.nombre, u.id]} %><br>
+  	<%= f.label "Piso:" %>
+    <%= f.text_field :piso %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

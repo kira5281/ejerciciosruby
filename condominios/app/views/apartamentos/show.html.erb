@@ -1,0 +1,12 @@
+<h1>Lista de personas</h1>
+
+<%= link_to "Agregar Persona", new_persona_path%>
+
+<% @apartamento.personas.each do |persona| %>
+	<li><%= persona.nombre %>
+		| Identificación: | <%= persona.identificacion %>
+		<%= link_to "Editar", edit_persona_path(persona) %>
+		<%= link_to "borrar", persona_path(persona), method: :delete, 
+		data: { confirm: 'Estas seguro?'} %>
+	</li>
+<% end %>

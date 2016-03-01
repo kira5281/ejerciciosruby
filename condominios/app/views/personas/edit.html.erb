@@ -1,0 +1,15 @@
+<h1>Editar Personas</h1>
+
+<%= form_for @persona do |f| %>
+  <p>
+    <%= f.label "Nombre:" %>
+    <%= f.text_field :nombre %><br>
+  	<%= f.label "Identificación:" %>
+    <%= f.text_field :identificacion %>
+    <%= f.select :apartamento_id, Apartamento.all.collect{|u| [u.nombre, u.id]} %><br>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

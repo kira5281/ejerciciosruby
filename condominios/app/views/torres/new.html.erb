@@ -1,0 +1,15 @@
+<h1>Añadir Torre</h1>
+
+<%= form_for @torre do |f| %>
+  <p>
+    <%= f.label "nombre:" %>
+    <%= f.text_field :nombre %>
+    <br>
+    <%= f.label "portero:" %>
+    <%= f.text_field :portero %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

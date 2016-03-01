@@ -1,0 +1,13 @@
+<h1>Lista de apartamentos</h1>
+
+<%= link_to "Agregar apartamento", new_apartamento_path%>
+
+<% @torre.apartamentos.each do |apartamento| %>
+	<li><%= apartamento.nombre %>
+		| Piso: | <%= apartamento.piso %>
+		<%= link_to 'Ver', apartamento_path(apartamento) %>
+		<%= link_to "Editar", edit_apartamento_path(apartamento) %>
+		<%= link_to "borrar", apartamento_path(apartamento), method: :delete, 
+		data: { confirm: 'Estas seguro?'} %>
+	</li>
+<% end %>
