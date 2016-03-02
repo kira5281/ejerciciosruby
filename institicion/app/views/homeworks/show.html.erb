@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod asignatura:</strong>
+  <%= @homework.cod_asignatura %>
+</p>
+
+<p>
+  <strong>Enunciado:</strong>
+  <%= @homework.enunciado %>
+</p>
+
+<p>
+  <strong>Fecha final:</strong>
+  <%= @homework.fecha_final %>
+</p>
+
+<%= link_to 'Edit', edit_homework_path(@homework) %> |
+<%= link_to 'Back', homeworks_path %>

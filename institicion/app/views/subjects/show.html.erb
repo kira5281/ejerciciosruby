@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @subject.nombre %>
+</p>
+
+<p>
+  <strong>Teachers:</strong>
+  <% @subject.teachers.each do |teacher| %>
+  		<li>
+  			<%= teacher.nombre%>
+  			<%= teacher.apellido%>
+  		</li>
+  <% end %>
+</p>
+
+<p>
+  <strong>Tareas:</strong>
+  <% @subject.homeworks.each do |homework| %>
+  		<li>
+  			<%= homework.enunciado%>
+  		</li>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_subject_path(@subject) %> |
+<%= link_to 'Back', subjects_path %>

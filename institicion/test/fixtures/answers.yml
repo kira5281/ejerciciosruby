@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_tarea: 1
+  cod_estudiante: MyString
+  mensaje_de_respuesta: MyString
+  calificacion: 1.5
+
+two:
+  cod_tarea: 1
+  cod_estudiante: MyString
+  mensaje_de_respuesta: MyString
+  calificacion: 1.5

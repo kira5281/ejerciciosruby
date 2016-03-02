@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_asignatura: 1
+  enunciado: MyString
+  fecha_final: MyString
+
+two:
+  cod_asignatura: 1
+  enunciado: MyString
+  fecha_final: MyString

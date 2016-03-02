@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod tarea:</strong>
+  <%= @answer.cod_tarea %>
+</p>
+
+<p>
+  <strong>Cod estudiante:</strong>
+  <%= @answer.cod_estudiante %>
+</p>
+
+<p>
+  <strong>Mensaje de respuesta:</strong>
+  <%= @answer.mensaje_de_respuesta %>
+</p>
+
+<p>
+  <strong>Calificacion:</strong>
+  <%= @answer.calificacion %>
+</p>
+
+<%= link_to 'Edit', edit_answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>

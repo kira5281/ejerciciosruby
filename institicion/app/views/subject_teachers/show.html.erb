@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod profesor:</strong>
+  <%= @subject_teacher.cod_profesor %>
+</p>
+
+<p>
+  <strong>Cod asignatura:</strong>
+  <%= @subject_teacher.cod_asignatura %>
+</p>
+
+<%= link_to 'Edit', edit_subject_teacher_path(@subject_teacher) %> |
+<%= link_to 'Back', subject_teachers_path %>
